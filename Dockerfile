@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:10-alpine
 
 WORKDIR /usr/src/app
 
@@ -8,5 +8,4 @@ RUN yarn
 
 COPY . .
 
-#EXPOSE 3000
 CMD [ "node", "index.js" ]
