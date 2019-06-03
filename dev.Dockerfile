@@ -2,11 +2,11 @@ FROM node:10-alpine
 
 WORKDIR /usr/src/app
 
-RUN npm install -g nodemon
-RUN npm install -g jest
+RUN yarn global add nodemon
+RUN yarn global add jest
 
 COPY package*.json ./
-RUN npm install
+RUN yarn
 
 COPY . .
 

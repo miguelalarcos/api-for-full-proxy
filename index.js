@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get('/api/test', function (req, res) {
-  res.json({text: 'Hello World!'});
+  res.json({text: 'Hello World!!!'});
 });
 
 app.listen(3000, function () {
